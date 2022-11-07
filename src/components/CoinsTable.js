@@ -80,7 +80,7 @@ const TableCoins = ({ coins, search }) => {
     const totalVolumeTemplate = ({ total_volume }) => (
         <Fragment>
             <span className="p-column-title"> {titles[4]} </span>
-            {total_volume.toLocaleString()}
+            $ {total_volume.toLocaleString()}
         </Fragment>
     );
     
