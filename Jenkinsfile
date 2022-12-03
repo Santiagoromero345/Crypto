@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker run -p 3000:80 react-app'
+                sh 'docker run -d -p 3000:80 react-app'
             }
         }
     }
