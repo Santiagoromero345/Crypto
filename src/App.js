@@ -40,7 +40,7 @@ function App() {
               <span>
                 <Icon id='main-title-icon' />
               </span>
-              <span id="main-title-text">CRYPTO MARKET PRICES - PRUEBA JENKINS</span>
+              <span id="main-title-text">CRYPTO MARKET PRICES - PRUEBA JENKINS2</span>
             </h1>
             <input type='text'
               className='form-control bg-dark text-light mt-3 mb-3 text-center filter-input'
