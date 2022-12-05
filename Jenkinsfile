@@ -1,16 +1,17 @@
 // Create simple pipeline to React app and deploy on localhost
 pipeline {
     //first build Dockerfile
-    agent { dockerfile true }
+    agent any
     stages {
-        stage(build) {
+        stage('Build') {
             steps {
-                sh 'docker build -t poli-front .'
+                sh 'docker build -t react-app .'
             }
         }
-        stage(deploy) {
+        stage('Deploy') {
             steps {
-                sh 'docker run -p 3000:80 poli-front:latest'
+                sh 'docker run -d -p 3000:80 react-app'
             }
         }
     }
+}
